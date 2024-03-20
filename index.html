@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeDecode</title>
+    <link rel="shortcut icon" href="src/imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script defer src="./main.js" > </script>
+</head>
+<body>
+
+    <main class="funcionalidades">
+
+        <header class="funcionalidades__logo">
+            <img src="./src/imagens/logo.png" alt="Logo da Alura Cursos online">
+        </header>
+    
+        <div class="funcionalidades__container">
+
+            <div class="funcionalidades__container__inputs"> 
+                    <div class="funcionalidades__container__inputs_textarea"> 
+                        <textarea class="input-texto" rows="30" cols="15" wrap="hard" required placeholder="Digite seu texto" >  </textarea>
+                    </div>
+                <p class="regra-informacao"><img src="./src/imagens/bi_exclamation-circle-fill.png" alt="info"> Apenas letras minúsculas e sem acento.</p>
+                <div class="funcionalidades__container__inputs__botao">   
+                    <button class="botao-criptografar" onclick="botaoEncriptar()"> Criptografar </button>    
+                    <button class="botao-descriptografar" onclick="botaoDesencriptar()"> Descriptografar </button>  
+                    
+                </div>
+                <!--<input class="input-texto" type="text" id="input-texto" required minlength="4" maxlength="400" size="40" placeholder="Digite seu texto"/>!-->                
+            </div> 
+
+            <section class="funcionalidades__container__outputs__caixaresultado"> 
+                <div class="funcionalidades__container__outputs__caixaresultado" id="image-search">
+                    <!--<textarea class="caixa-resultado" rows="30" cols="20" wrap="hard"  disabled >  </textarea>!--> 
+                    <img src="./src/imagens/image-search.svg" >
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <p>Digite um texto que você queira Criptografar ou Descriptografar</p>
+                    
+                </div>
+                             
+                <div class="funcionalidades__container__outputs__caixaresultado" id="teste"> 
+                    <button class="botao-copiar" onclick="botaoCopiar()"> Copiar </button>
+                </div>
+
+            </section>             
+        </div>       
+                
+        </main>
+    <footer>    
+        <!--INFORMAÇÃO DE RODAPÉ-->
+    </footer>
+</body>
+</html>
